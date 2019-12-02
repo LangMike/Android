@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "923032972684",
+    "firebase_url": "https://amindset-223112.firebaseio.com",
+    "project_id": "amindset-223112",
+    "storage_bucket": "amindset-223112.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923032972684:android:84e53f05ca89bd20",
+        "android_client_info": {
+          "package_name": "com.amindset.ve.amindset"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923032972684-c8cgucuqhd28p2asohqge8c6rfn6t701.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWFRZoMVE1RWuzwB6Sd4_eUwU2nmVsQX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923032972684-c8cgucuqhd28p2asohqge8c6rfn6t701.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

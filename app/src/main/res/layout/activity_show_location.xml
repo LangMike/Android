@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+>
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ShowLocation.ShowLocation">
+
+            <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
+                      <!--android:id="@+id/map"-->
+                      <!--android:layout_width="match_parent"-->
+                      <!--android:layout_height="match_parent"-->
+                      <!--class="com.google.android.gms.maps.SupportMapFragment"-->
+                      <!--android:name="com.testing.svma.MainActivity"/>-->
+
+            <fragment
+                      android:id="@+id/mapView"
+                      class="com.google.android.gms.maps.SupportMapFragment"
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/_360sdp"
+                      tools:context=".ShowLocation.ShowLocation"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:id="@+id/tv_chechservice"
+                      app:layout_constraintTop_toBottomOf="@+id/mapView"
+                      android:text="Check service near you"
+                      android:textSize="@dimen/_13sdp"
+                      android:textColor="@color/black"
+                      android:layout_margin="15dp"
+                      android:layout_height="wrap_content"/>
+
+            <EditText android:id="@+id/et_location"
+                      app:layout_constraintTop_toBottomOf="@+id/tv_chechservice"
+                      android:layout_marginLeft="@dimen/_10sdp"
+                      android:layout_marginRight="@dimen/_10sdp"
+                      android:layout_marginTop="@dimen/_15sdp"
+                      android:drawableRight="@mipmap/ic_current_location"
+                      android:hint="Let's Check"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/_10sdp"
+                      android:background="@drawable/edittextmap"
+            />
+
+            <TextView android:id="@+id/next"
+                      android:layout_height="wrap_content"
+                      android:layout_width="@dimen/_100sdp"
+                      android:text="Next"
+                      android:gravity="center"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintStart_toStartOf="parent"
+                      android:layout_marginTop="@dimen/_25sdp"
+                      android:onClick="onNextClick"
+
+                      app:layout_constraintTop_toBottomOf="@+id/et_location"
+                      style="@style/Button"
+            ></TextView>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</layout>

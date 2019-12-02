@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+>
+
+    <FrameLayout
+            android:id="@+id/child_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/llparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:text="Browse service"
+                  android:textSize="@dimen/_13sdp"
+                  android:visibility="gone"
+                  android:layout_marginStart="@dimen/_13sdp"
+                  android:layout_height="wrap_content"/>
+        <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:scrollIndicators="none"
+                android:scrollbars="none"
+                android:id="@+id/horizontalScrollView">
+
+            <LinearLayout
+                    android:id="@+id/ll_main_under_cardview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_counseleor"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintTop_toTopOf="@id/view"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view"
+                        app:layout_constraintStart_toStartOf="parent"
+                        card_view:cardCornerRadius="4dp">
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:id="@+id/rl_counselor"
+                                    android:background="@color/colorPrimary"
+                                    android:layout_height="match_parent">
+
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:id="@+id/iv_depression"
+                                   android:layout_height="wrap_content"
+                                   android:background="@mipmap/ic_q_a"
+                                   android:layout_alignParentStart="true"
+                                   android:layout_marginStart="@dimen/_12sdp"
+                                   android:layout_alignParentTop="true"
+                                   android:layout_marginTop="28dp"/>
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:id="@+id/iv_rightarrow"
+                                   android:layout_height="wrap_content"
+                                   android:background="@mipmap/ic_right_arrow"
+                                   android:layout_alignParentRight="true"
+                                   android:layout_alignParentTop="true"
+                                   android:layout_marginRight="20dp"
+                                   android:layout_marginTop="20dp"/>
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:id="@+id/tv_servicetitle"
+                                  android:layout_below="@+id/iv_depression"
+                                  android:text=""
+                                  android:layout_marginStart="@dimen/_12sdp"
+                                  android:layout_marginTop="10dp"
+                                  android:textSize="@dimen/_13sdp"
+                                  android:textColor="@color/black"
+                                  android:layout_height="wrap_content"/>
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:id="@+id/tv_details"
+                                  android:layout_below="@+id/tv_servicetitle"
+                                  android:text="Please complete before seeing a Counselor"
+                                  android:layout_marginStart="@dimen/_12sdp"
+                                  android:layout_marginTop="10dp"
+                                  android:paddingRight="@dimen/_5sdp"
+                                  android:gravity="left"
+                                  android:layout_marginEnd="@dimen/_12sdp"
+                                  android:textSize="@dimen/_10sdp"
+                                  android:layout_marginBottom="@dimen/_10sdp"
+                                  android:layout_height="wrap_content"/>
+
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_medical"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintTop_toTopOf="@id/view"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        card_view:cardCornerRadius="4dp">
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:background="@android:color/holo_orange_dark"
+                                    android:layout_height="match_parent">
+
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:id="@+id/iv_depression2"
+                                   android:layout_height="wrap_content"
+                                   android:background="@mipmap/ic_medicle_dashboard_user"
+                                   android:layout_alignParentStart="true"
+                                   android:layout_marginStart="@dimen/_12sdp"
+                                   android:layout_alignParentTop="true"
+                                   android:layout_marginTop="28dp"/>
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:id="@+id/iv_rightarrow2"
+                                   android:layout_height="wrap_content"
+                                   android:background="@mipmap/ic_right_arrow"
+                                   android:layout_alignParentRight="true"
+                                   android:layout_alignParentTop="true"
+                                   android:layout_marginRight="20dp"
+                                   android:layout_marginTop="20dp"/>
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:id="@+id/tv_servicetitle2"
+                                  android:layout_below="@+id/iv_depression2"
+                                  android:text=""
+                                  android:layout_marginStart="@dimen/_12sdp"
+                                  android:layout_marginTop="10dp"
+                                  android:textSize="@dimen/_13sdp"
+                                  android:textColor="@color/black"
+                                  android:layout_height="wrap_content"/>
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:id="@+id/tv_details2"
+                                  android:layout_below="@+id/tv_servicetitle2"
+                                  android:text="Please complete before seeing a Medical provider
+"
+                                  android:layout_marginStart="@dimen/_12sdp"
+                                  android:layout_marginTop="10dp"
+                                  android:paddingRight="@dimen/_5sdp"
+                                  android:layout_marginEnd="@dimen/_12sdp"
+                                  android:gravity="left"
+                                  android:textSize="@dimen/_10sdp"
+                                  android:layout_marginBottom="@dimen/_10sdp"
+
+                                  android:layout_height="wrap_content"/>
+
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_pharmacist"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintTop_toTopOf="@id/view"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view"
+                        app:layout_constraintStart_toStartOf="parent"
+
+                        android:layout_marginLeft="20dp"
+                        card_view:cardCornerRadius="4dp">
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:background="@color/colorPrimary"
+                                    android:layout_height="match_parent">
+
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:id="@+id/iv_depression3"
+                                   android:layout_height="wrap_content"
+                                   android:background="@mipmap/ic_pharmacist_dashboard_user"
+                                   android:layout_alignParentStart="true"
+                                   android:layout_marginStart="@dimen/_12sdp"
+                                   android:layout_alignParentTop="true"
+                                   android:layout_marginTop="28dp"/>
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:id="@+id/iv_rightarrow3"
+                                   android:layout_height="wrap_content"
+                                   android:background="@mipmap/ic_right_arrow"
+                                   android:layout_alignParentRight="true"
+                                   android:layout_alignParentTop="true"
+                                   android:layout_marginRight="20dp"
+                                   android:layout_marginTop="20dp"/>
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:id="@+id/tv_servicetitle3"
+                                  android:layout_below="@+id/iv_depression3"
+                                  android:text=""
+                                  android:layout_marginStart="@dimen/_12sdp"
+                                  android:layout_marginTop="10dp"
+                                  android:textSize="@dimen/_13sdp"
+                                  android:textColor="@color/black"
+                                  android:layout_height="wrap_content"/>
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:id="@+id/tv_details3"
+                                  android:layout_below="@+id/tv_servicetitle3"
+                                  android:text="Please complete before seeing a Pharmaacist"
+                                  android:layout_marginStart="@dimen/_12sdp"
+                                  android:layout_marginTop="10dp"
+                                  android:paddingRight="@dimen/_5sdp"
+                                  android:gravity="left"
+                                  android:layout_marginEnd="@dimen/_12sdp"
+                                  android:textSize="@dimen/_10sdp"
+                                  android:layout_marginBottom="@dimen/_10sdp"
+
+                                  android:layout_height="wrap_content"/>
+
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <TextView android:layout_width="wrap_content"
+                  android:text="More"
+                  android:textSize="@dimen/_13sdp"
+                  android:layout_marginStart="@dimen/_13sdp"
+                  android:layout_marginTop="@dimen/_13sdp"
+                  android:layout_height="wrap_content"/>
+
+
+        <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:scrollIndicators="none"
+                android:scrollbars="none"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:id="@+id/horizontalScrollView11">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_whattreat"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintTop_toTopOf="@id/view"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view"
+                        app:layout_constraintStart_toStartOf="parent"
+                        card_view:cardCornerRadius="4dp">
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:background="@color/white"
+                                    android:layout_height="match_parent">
+
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:id="@+id/iv_depression11"
+                                   android:layout_height="wrap_content"
+                                   android:background="@mipmap/ic_question_mark_dashboard_user"
+                                   android:layout_alignParentStart="true"
+                                   android:layout_marginStart="26dp"
+                                   android:layout_alignParentTop="true"
+                                   android:layout_marginTop="28dp"/>
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:id="@+id/iv_rightarrow11"
+                                   android:layout_height="wrap_content"
+                                   android:background="@mipmap/ic_right_arrow_white_card"
+                                   android:layout_alignParentRight="true"
+                                   android:layout_alignParentTop="true"
+                                   android:layout_marginRight="20dp"
+                                   android:layout_marginTop="20dp"/>
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:id="@+id/tv_servicetitle11"
+                                  android:layout_below="@+id/iv_depression11"
+                                  android:text="What we treat"
+                                  android:layout_marginStart="26dp"
+                                  android:layout_marginTop="10dp"
+                                  android:textSize="@dimen/_13sdp"
+                                  android:textColor="@color/black"
+                                  android:layout_height="wrap_content"/>
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:id="@+id/tv_details_whatwetrip"
+                                  android:layout_below="@+id/tv_servicetitle11"
+                                  android:text=""
+                                  android:layout_marginStart="26dp"
+                                  android:layout_marginTop="10dp"
+                                  android:paddingRight="@dimen/_5sdp"
+                                  android:gravity="left"
+                                  android:textSize="@dimen/_10sdp"
+                                  android:layout_height="wrap_content"/>
+
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_using_app"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="@dimen/_180sdp"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintTop_toTopOf="@id/view"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        card_view:cardCornerRadius="4dp">
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:background="@android:color/white"
+                                    android:layout_height="match_parent">
+
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:id="@+id/iv_depression21"
+                                   android:layout_height="wrap_content"
+                                   android:background="@mipmap/ic_using_app_dashboard_user"
+                                   android:layout_alignParentStart="true"
+                                   android:layout_marginStart="26dp"
+                                   android:layout_alignParentTop="true"
+                                   android:layout_marginTop="25dp"/>
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:id="@+id/iv_rightarrow21"
+                                   android:layout_height="wrap_content"
+                                   android:background="@mipmap/ic_right_arrow_white_card"
+                                   android:layout_alignParentRight="true"
+                                   android:layout_alignParentTop="true"
+                                   android:layout_marginRight="20dp"
+                                   android:layout_marginTop="25dp"/>
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:id="@+id/tv_servicetitle21"
+                                  android:layout_below="@+id/iv_depression21"
+                                  android:text="Using app"
+                                  android:layout_marginStart="26dp"
+                                  android:layout_marginTop="8dp"
+                                  android:textSize="@dimen/_13sdp"
+                                  android:textColor="@color/black"
+                                  android:layout_height="wrap_content"/>
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:id="@+id/tv_details21"
+                                  android:layout_below="@+id/tv_servicetitle21"
+                                  android:text="This app is not for emergency uses.Use this app to talk with Counselor, Doctor or Pharmacist"
+                                  android:layout_marginStart="26dp"
+                                  android:layout_marginTop="8dp"
+                                  android:paddingRight="@dimen/_5sdp"
+                                  android:gravity="left"
+                                  android:textSize="@dimen/_10sdp"
+
+                                  android:layout_height="wrap_content"/>
+
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_favlist"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintTop_toTopOf="@id/view"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view"
+                        app:layout_constraintStart_toStartOf="parent"
+
+                        android:layout_marginLeft="20dp"
+                        card_view:cardCornerRadius="4dp">
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:background="@color/white"
+                                    android:layout_height="match_parent">
+
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:id="@+id/iv_depression31"
+                                   android:layout_height="wrap_content"
+                                   android:background="@mipmap/ic_favourite_dashboard"
+                                   android:layout_alignParentStart="true"
+                                   android:layout_marginStart="26dp"
+                                   android:layout_alignParentTop="true"
+                                   android:layout_marginTop="28dp"/>
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:id="@+id/iv_rightarrow31"
+                                   android:layout_height="wrap_content"
+                                   android:background="@mipmap/ic_right_arrow_white_card"
+                                   android:layout_alignParentRight="true"
+                                   android:layout_alignParentTop="true"
+                                   android:layout_marginRight="20dp"
+                                   android:layout_marginTop="20dp"/>
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:id="@+id/tv_servicetitle31"
+                                  android:layout_below="@+id/iv_depression31"
+                                  android:text="Favorites"
+                                  android:layout_marginStart="26dp"
+                                  android:layout_marginTop="10dp"
+                                  android:textSize="@dimen/_13sdp"
+                                  android:textColor="@color/black"
+                                  android:layout_height="wrap_content"/>
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:id="@+id/tv_details31"
+                                  android:layout_below="@+id/tv_servicetitle31"
+                                  android:text="Your favorite providers are at one place here"
+                                  android:layout_marginStart="26dp"
+                                  android:layout_marginTop="10dp"
+                                  android:paddingRight="@dimen/_5sdp"
+                                  android:gravity="left"
+                                  android:textSize="@dimen/_10sdp"
+                                  android:layout_height="wrap_content"/>
+
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    </FrameLayout>
+
+</layout>

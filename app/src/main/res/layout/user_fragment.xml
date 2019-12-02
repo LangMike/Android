@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+>
+
+    <FrameLayout
+            android:id="@+id/child_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView android:layout_width="wrap_content"
+                  android:text="Quality service one person at a time"
+                  android:layout_marginTop="@dimen/_20sdp"
+                  android:textSize="@dimen/_13sdp"
+                  android:textColor="@color/black"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_marginStart="@dimen/_13sdp"
+                  android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+                android:id="@+id/llparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="65dp">
+
+
+            <TextView android:layout_width="wrap_content"
+                      android:text="Browse service"
+                      android:textSize="@dimen/_13sdp"
+                      android:visibility="gone"
+                      android:layout_marginStart="@dimen/_13sdp"
+                      android:layout_height="wrap_content"/>
+            <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:scrollIndicators="none"
+                    android:scrollbars="none"
+                    android:id="@+id/horizontalScrollView">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <android.support.v7.widget.CardView
+                            android:id="@+id/card_view_recent"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_130sdp"
+                            android:layout_height="@dimen/_130sdp"
+                            card_view:layout_constraintEnd_toEndOf="parent"
+                            card_view:layout_constraintTop_toTopOf="@id/view"
+                            card_view:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view"
+                            app:layout_constraintStart_toStartOf="parent"
+                            card_view:cardCornerRadius="4dp">
+
+                        <RelativeLayout android:layout_width="match_parent"
+                                        android:background="@color/colorPrimary"
+                                        android:layout_height="match_parent">
+
+
+                            <ImageView android:layout_width="wrap_content"
+                                       android:id="@+id/iv_depression2"
+                                       android:layout_height="wrap_content"
+                                       android:background="@mipmap/ic_recent_provider_dashboard"
+                                       android:layout_centerInParent="true"
+                                       android:layout_marginStart="26dp"
+                                       android:layout_alignParentTop="true"
+                                       android:layout_marginTop="28dp"/>
+
+
+                            <TextView android:layout_width="wrap_content"
+                                      android:id="@+id/tv_servicetitle2"
+                                      android:layout_below="@+id/iv_depression2"
+                                      android:text="Past Appointments"
+                                      android:layout_centerInParent="true"
+                                      android:layout_marginStart="26dp"
+                                      android:layout_marginTop="10dp"
+                                      android:textSize="@dimen/_13sdp"
+                                      android:textColor="@color/black"
+                                      android:layout_height="wrap_content"/>
+
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                            android:id="@+id/card_view_earning"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_130sdp"
+                            android:layout_height="@dimen/_130sdp"
+                            card_view:layout_constraintEnd_toEndOf="parent"
+                            card_view:layout_constraintTop_toTopOf="@id/view"
+                            card_view:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginLeft="@dimen/_20sdp"
+
+                            card_view:cardCornerRadius="4dp">
+
+                        <RelativeLayout android:layout_width="match_parent"
+                                        android:background="@color/yellow_provider"
+                                        android:layout_height="match_parent">
+
+
+                            <ImageView android:layout_width="wrap_content"
+                                       android:id="@+id/iv_depression11"
+                                       android:layout_height="wrap_content"
+                                       android:background="@mipmap/ic_earning_provider_dashboard"
+                                       android:layout_centerInParent="true"
+                                       android:layout_marginStart="26dp"
+                                       android:layout_alignParentTop="true"
+                                       android:layout_marginTop="28dp"/>
+
+
+                            <TextView android:layout_width="wrap_content"
+                                      android:id="@+id/tv_servicetitle11"
+                                      android:layout_below="@+id/iv_depression11"
+                                      android:text="Earnings"
+                                      android:layout_centerInParent="true"
+                                      android:layout_marginStart="26dp"
+                                      android:layout_marginTop="10dp"
+                                      android:textSize="@dimen/_13sdp"
+                                      android:textColor="@color/black"
+                                      android:layout_height="wrap_content"/>
+
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:scrollIndicators="none"
+                    android:scrollbars="none"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:id="@+id/horizontalScrollView11">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                    <android.support.v7.widget.CardView
+                            android:id="@+id/card_view_profile"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_130sdp"
+                            android:layout_height="@dimen/_130sdp"
+                            android:background="@color/colorPrimary"
+                            card_view:layout_constraintEnd_toEndOf="parent"
+                            card_view:layout_constraintTop_toTopOf="@id/view"
+                            card_view:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view"
+                            app:layout_constraintStart_toStartOf="parent"
+                            card_view:cardCornerRadius="4dp">
+
+                        <RelativeLayout android:layout_width="match_parent"
+                                        android:background="@color/yellow_provider"
+                                        android:layout_height="match_parent">
+
+
+                            <ImageView android:layout_width="wrap_content"
+                                       android:id="@+id/iv_depression21"
+                                       android:layout_height="wrap_content"
+                                       android:background="@mipmap/ic_using_app_dashboard_user"
+                                       android:layout_centerInParent="true"
+                                       android:layout_marginStart="26dp"
+                                       android:layout_alignParentTop="true"
+                                       android:layout_marginTop="28dp"/>
+
+
+                            <TextView android:layout_width="wrap_content"
+                                      android:id="@+id/tv_servicetitle21"
+                                      android:layout_below="@+id/iv_depression21"
+                                      android:text="Profile"
+                                      android:layout_centerInParent="true"
+                                      android:layout_marginStart="26dp"
+                                      android:layout_marginTop="10dp"
+                                      android:textSize="@dimen/_13sdp"
+                                      android:textColor="@color/black"
+                                      android:layout_height="wrap_content"/>
+
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                            android:id="@+id/card_view_using_app"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_130sdp"
+                            android:layout_height="@dimen/_130sdp"
+                            card_view:layout_constraintEnd_toEndOf="parent"
+                            card_view:layout_constraintTop_toTopOf="@id/view"
+                            card_view:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            card_view:cardCornerRadius="4dp">
+
+                        <RelativeLayout android:layout_width="match_parent"
+                                        android:id="@+id/rl_counselor"
+                                        android:background="@color/colorPrimary"
+                                        android:layout_height="match_parent">
+
+
+                            <ImageView android:layout_width="wrap_content"
+                                       android:id="@+id/iv_depression"
+                                       android:layout_height="wrap_content"
+                                       android:background="@mipmap/ic_appointment_tab_off"
+                                       android:layout_marginStart="26dp"
+                                       android:layout_centerHorizontal="true"
+                                       android:layout_marginTop="28dp"/>
+
+
+                            <TextView android:layout_width="wrap_content"
+                                      android:id="@+id/tv_servicetitle"
+                                      android:layout_below="@+id/iv_depression"
+                                      android:text="Using app"
+                                      android:layout_centerInParent="true"
+                                      android:layout_marginStart="26dp"
+                                      android:layout_marginTop="20dp"
+                                      android:textSize="@dimen/_13sdp"
+                                      android:textColor="@color/black"
+                                      android:layout_height="wrap_content"/>
+
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </FrameLayout>
+
+</layout>

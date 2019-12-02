@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">AmindSet</string>
+    <string name="label_getstarted">Get started</string>
+    <string name="some_error">Some Error occured. Please try again!</string>
+    <string name="hint_enter_email_address">Enter you email address</string>
+    <string name="hint_enter_your_password">Enter your password</string>
+    <string name="login">Login</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="basic_profile">Basic Profile</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="msg_check_internet">Please check internet conncetion</string>
+    <string name="msg_fill_login_data">Please fill the data</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="email_format">Please check email format!</string>
+    <string name="enter_email">Please enter email!</string>
+    <string name="email_verification">Verification</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="link">http://ec2-52-15-107-221.us-east-2.compute.amazonaws.com/amindset/crisis.php</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_card_number">Enter card number</string>
+    <string name="name_on_card">Name on card</string>
+    <string name="recovery">Recovery</string>
+    <string name="enter_your_personal_details">Enter your personal details</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_id">Enter id</string>
+    <string name="enter_number">Enter number</string>
+    <string name="health_information">Health Information</string>
+    <string name="enter_age">Enter Age</string>
+    <string name="enter_height">Enter height in cm</string>
+    <string name="enter_weight">Enter weight</string>
+    <string name="enter_new_password">Enter new password</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="error_some_problem_occur">Some problem occur please try again</string>
+    <string name="hint_profession_title">Profession title</string>
+    <string name="hint_years_of_experience">Years of Experience</string>
+    <string name="msg_select_gender">Please select Gender</string>
+
+    <string name="room_status">status</string>
+    <string name="permissions_needed">Camera and Microphone permissions needed. Please allow in App Settings for
+        additional functionality.
+    </string>
+    <string name="turn_speaker_on">Speaker ON</string>
+    <string name="error_retrieving_access_token">Error retrieving token</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="settings">Settings</string>
+    <string name="codec_title">Set your preferred audio and video codec. Not all codecs are supported with Group rooms.
+        The media server will fallback to OPUS or VP8 if a preferred codec is not supported.
+    </string>
+    <string name="pref_title_audio_codec">Audio Codec</string>
+    <string name="pref_title_video_codec">Video Codec</string>
+    <string name="sender_bandwidth_constraints">Set sender bandwidth constraints. Zero represents the WebRTC default
+        value which varies by codec.
+    </string>
+    <string name="max_audio_bitrate">Max Audio Bitrate (bits per second)</string>
+    <string name="max_video_bitrate">Max Video Bitrate (bits per second)</string>
+    <string name="vp8_simulcast">VP8 Simulcast</string>
+
+
+    <string name="quickstart_message">Click the SUBSCRIBE TO WEATHER button below to subscribe to the
+        weather topic. Messages sent to the weather topic will be received. The LOG TOKEN button logs the
+        InstanceID token to logcat.
+    </string>
+    <string name="subscribe_to_weather">Subscribe To Weather</string>
+    <string name="log_token">Log Token</string>
+
+    <string name="msg_subscribed">Subscribed to weather topic</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <!--
+        This is the name that users will see when interacting with this channel.
+        It should describe the category of notifications that will be sent through this channel
+     -->
+    <string name="default_notification_channel_name" translatable="true">Weather</string>
+    <string name="msg_subscribe_failed">Failed to subscribe to weather topic</string>
+    <string name="fcm_message">FCM Message</string>
+    <string name="create_user_name">Create user name</string>
+    <string name="w8_ben_for_provider_outside_the_u_s"><u><b>W8-Ben</b></u> for provider outside the U.S.</string>
+    <string name="w9_for_provider_in_u_s"><u><b>W9</b></u> for provider in U.S.</string>
+
+</resources>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+>
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/bg"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Signin.SignIn">
+
+        <Space android:layout_width="match_parent"
+               android:id="@+id/spacetop"
+               android:background="@color/white"
+               android:layout_height="@dimen/_30sdp"/>
+        <ImageView
+                android:id="@+id/tv_amidset"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/spacetop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@mipmap/amindset"
+                android:layout_height="wrap_content"/>
+
+        <Space android:layout_width="match_parent"
+               android:id="@+id/space"
+               app:layout_constraintTop_toBottomOf="@+id/tv_amidset"
+               android:layout_height="@dimen/_30sdp"/>
+
+        <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                app:layout_constraintBottom_toBottomOf="@+id/space"
+        ></View>
+
+
+
+        <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintTop_toTopOf="@id/view"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:layout_constraintStart_toStartOf="parent"
+                card_view:cardCornerRadius="4dp">
+
+
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+            >
+
+                <Space android:layout_width="match_parent"
+                       android:id="@+id/space2"
+                       android:layout_height="@dimen/_10sdp"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:id="@+id/tv_signin"
+                          android:text="@string/login"
+                          android:textSize="25dp"
+                          android:textColor="@color/colorPrimary"
+                          android:gravity="center"
+                          android:layout_height="wrap_content"
+                          card_view:layout_constraintTop_toBottomOf="@+id/space2"
+                          app:layout_constraintStart_toStartOf="parent"
+                          app:layout_constraintHorizontal_bias=".1"
+                          app:layout_constraintEnd_toEndOf="parent"
+                />
+
+                <EditText android:id="@+id/et_emailaddress"
+                          style="@style/EditText"
+                          app:layout_constraintTop_toBottomOf="@+id/tv_signin"
+                          android:hint="Enter user name"
+                          android:layout_marginLeft="@dimen/_10sdp"
+                          android:text=""
+                          android:textSize="@dimen/textSizePrimary"
+                          android:layout_marginRight="@dimen/_10sdp"
+                          android:drawableLeft="@mipmap/ic_user_login"
+                          android:layout_marginTop="@dimen/_15sdp"
+                />
+
+
+                <EditText android:id="@+id/et_password"
+                          app:layout_constraintTop_toBottomOf="@+id/et_emailaddress"
+                          android:layout_marginLeft="@dimen/_10sdp"
+                          android:layout_marginRight="@dimen/_10sdp"
+                          android:layout_marginTop="@dimen/_15sdp"
+                          android:inputType="textPassword"
+                          android:text=""
+                          android:drawableRight="@mipmap/ic_eye_off_login"
+                          android:drawableLeft="@mipmap/ic_lock_password_login"
+                          android:hint="@string/hint_enter_your_password"
+                          style="@style/EditText"/>
+
+
+                <TextView
+                        android:id="@+id/tv_forgot_password"
+                        android:layout_width="wrap_content"
+                        android:text="Forgot Password?"
+                        android:textSize="@dimen/textSizeSecondry"
+                        android:textStyle="bold"
+                        app:layout_constraintTop_toBottomOf="@+id/et_password"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintHorizontal_bias=".86"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:onClick="onClickForgotPassword"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content"/>
+
+                <TextView android:id="@+id/login"
+                          android:layout_height="wrap_content"
+                          android:layout_width="match_parent"
+                          android:text="@string/login"
+                          android:gravity="center"
+                          app:layout_constraintEnd_toEndOf="parent"
+                          app:layout_constraintStart_toStartOf="parent"
+                          android:layout_marginTop="@dimen/_25sdp"
+                          android:onClick="onLoginClick"
+                          app:layout_constraintTop_toBottomOf="@+id/tv_forgot_password"
+                          style="@style/Button"
+                ></TextView>
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+        <TextView
+                android:id="@+id/tv_newUser"
+                android:layout_width="@dimen/_250sdp"
+                android:text="New user? Sign Up"
+                style="@style/EditText"
+                app:layout_constraintTop_toBottomOf="@+id/card_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"
+                android:padding="14dp"
+                android:gravity="right"
+                android:onClick="OnClickNewUser"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</layout>

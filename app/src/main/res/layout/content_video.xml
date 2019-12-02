@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/videoContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:keepScreenOn="true"
+                android:background="@android:color/black"
+                tools:showIn="@layout/activity_video">
+
+    <com.twilio.video.VideoView
+            android:id="@+id/thumbnailVideoView"
+            app:overlaySurface="true"
+            app:mirror="true"
+            android:visibility="gone"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="59dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="16dp"/>
+
+    <com.twilio.video.VideoView
+            android:id="@+id/primaryVideoView"
+            app:mirror="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+
+    <ProgressBar
+            android:id="@+id/reconnectingProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            style="?android:attr/progressBarStyleLarge"
+            android:visibility="gone" />
+
+    <LinearLayout
+            android:id="@+id/status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/profile_image_to_caller"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_list_profile_pic_preview_placeholer"
+                app:civ_border_width="2dp"
+
+                android:layout_marginTop="@dimen/_20sdp"
+                app:civ_border_color="#FF000000"/>
+
+        <TextView
+                android:id="@+id/callerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="visible"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text=""/>
+
+        <TextView
+                android:id="@+id/videoStatusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="visible"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text=""/>
+
+        <Chronometer
+                android:id="@+id/chrono_meter"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:id="@+id/qanswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textCapSentences"
+                android:textSize="@dimen/_14sdp"
+                android:text="VIEW REPORT"/>
+
+    </LinearLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/_77sdp"
+
+                    android:layout_height="wrap_content">
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:orientation="vertical"
+                      android:visibility="gone"
+                      android:id="@+id/ll_reject"
+                      android:layout_marginLeft="@dimen/_10sdp"
+                      android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/iv_cut_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:visibility="visible"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:background="@mipmap/ic_call_reject"
+                />
+
+            <TextView
+                    android:id="@+id/iv_cut_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:visibility="visible"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:text="Reject"
+                   />
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:orientation="vertical"
+                      android:id="@+id/ll_accept"
+                      android:layout_marginRight="@dimen/_10sdp"
+                      android:layout_alignParentRight="true"
+                      android:visibility="gone"
+                      android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/iv_accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:visibility="visible"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:background="@mipmap/ic_accept_call"
+            />
+
+            <TextView
+                    android:id="@+id/iv_accept_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:visibility="visible"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:text="Accept"
+            />
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/iv_cut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:background="@mipmap/ic_call_reject"
+               />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

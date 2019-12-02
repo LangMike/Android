@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="@dimen/_280sdp"
+                                              android:orientation="vertical"
+                                             android:layout_height="match_parent">
+
+    <TextView android:layout_width="wrap_content"
+              android:id="@+id/tv_emailverification"
+              android:text="About you"
+              android:textSize="@dimen/_15sdp"
+              android:textColor="@color/black"
+              android:gravity="center"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="@dimen/_15sdp"
+              android:layout_marginLeft="@dimen/_15sdp"
+              android:layout_marginTop="@dimen/_15sdp"
+              android:layout_marginBottom="@dimen/_5sdp"
+              app:layout_constraintEnd_toEndOf="parent"
+    />
+
+
+    <EditText
+            android:id="@+id/et_aboutYou_dialog"
+            android:layout_below="@+id/about_you"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:text=""
+            android:hint="Please write something about you"
+            android:gravity="left|start"
+            android:layout_margin="@dimen/_10sdp"
+            android:maxLines="4"
+            android:textSize="@dimen/_11sdp"
+            android:padding="@dimen/_4sdp"
+            android:background="#f8f8f8"
+    />
+
+    <TextView android:id="@+id/save_details_provider_about_you"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/_40sdp"
+              android:text="SAVE"
+              android:gravity="center"
+              android:layout_marginTop="@dimen/_15sdp"
+              style="@style/Button"
+    ></TextView>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".VdoCall.VideoActivity">
+    <include layout="@layout/content_video"
+    />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/switchCameraActionFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:fabSize="mini"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:visibility="gone"
+            android:src="@mipmap/ic_camera_profile_pic" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/localVideoActionFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_gravity="center"
+            app:fabSize="mini"
+            android:visibility="gone"
+            android:src="@mipmap/ic_video_recent_provider" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/muteActionFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_video_recent_provider" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/connectActionFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:fabSize="normal"
+            android:visibility="gone"
+            android:src="@mipmap/ic_video_call_provider_detail_view" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

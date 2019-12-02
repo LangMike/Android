@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Selection.SelectionActivity">
+        <Space android:layout_width="match_parent"
+               android:id="@+id/spacetop"
+               android:layout_height="200dp"/>
+        <ImageView
+                android:id="@+id/tv_amidset"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                app:layout_constraintTop_toBottomOf="@+id/spacetop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@mipmap/amindset"
+                android:layout_height="wrap_content"/>
+
+
+        <ImageView android:layout_width="wrap_content"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   android:background="@mipmap/bg_graphic_user_select"
+                   android:layout_height="wrap_content"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   android:visibility="gone"
+                   app:layout_constraintVertical_bias="0.538"/>
+
+        <TextView android:id="@+id/provider"
+                  android:layout_width="@dimen/_200sdp"
+                  android:layout_height="@dimen/_45sdp"
+                  android:text="Create an account"
+                  android:gravity="center"
+                  android:layout_below="@+id/spacetop"
+                  android:layout_centerHorizontal="true"
+                  android:onClick="onClickSignUp"
+                  android:textColor="@color/white"
+                  android:textSize="@dimen/_15sdp"
+                  android:background="@drawable/signincorner"
+        ></TextView>
+
+        <TextView android:id="@+id/user"
+                  android:layout_width="@dimen/_200sdp"
+                  android:layout_height="@dimen/_45sdp"
+                  android:text="Sign In"
+                  android:textColor="@color/black"
+                  android:gravity="center"
+                  android:layout_below="@+id/provider"
+                  android:onClick="onClickSignIn"
+                  android:textSize="@dimen/_15sdp"
+                  android:layout_marginTop="@dimen/_30sdp"
+                  android:background="@drawable/signincornerwhitestroke"
+                  android:layout_centerHorizontal="true"
+        ></TextView>
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_below="@+id/user"
+                        android:layout_marginTop="@dimen/_45sdp"
+                        android:id="@+id/rl_or"
+                        android:layout_height="wrap_content">
+
+            <View android:layout_width="match_parent" android:layout_height="0.5dp"
+                  android:layout_marginRight="@dimen/_5sdp"
+                  android:layout_marginLeft="@dimen/_40sdp"
+                  android:layout_toLeftOf="@+id/or"
+                  android:layout_centerInParent="true"
+                  android:background="@color/gray"></View>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="or"
+                      android:id="@+id/or"
+                      android:textSize="@dimen/_15sdp"
+                      android:layout_marginTop="@dimen/_35sdp"
+                      android:layout_centerInParent="true"
+                      android:layout_centerHorizontal="true"
+            />
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="0.5dp"
+                  android:layout_marginRight="@dimen/_40sdp"
+                  android:layout_marginLeft="@dimen/_5sdp"
+                  android:layout_centerInParent="true"
+                  android:layout_toRightOf="@+id/or"
+                  android:background="@color/gray"></View>
+
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_below="@+id/rl_or"
+                        android:layout_marginTop="@dimen/_45sdp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text=""
+                      android:id="@+id/joinasa"
+                      android:layout_centerInParent="true"
+                      android:layout_marginLeft="-30dp"
+                      android:textSize="@dimen/_13sdp"
+                      android:onClick="OnclickProviderSignup"
+                      android:layout_toLeftOf="@id/userprovider"
+                      android:layout_marginTop="@dimen/_35sdp"
+                      android:layout_centerHorizontal="true"
+            />
+
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text=""
+                      android:id="@+id/userprovider"
+                      android:textColor="@color/colorPrimary"
+                      android:onClick="onClickUserProvider"
+                      android:textSize="@dimen/_13sdp"
+                      android:layout_marginTop="@dimen/_35sdp"
+                      android:layout_centerInParent="true"
+                      android:layout_centerHorizontal="true"
+            />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</layout>

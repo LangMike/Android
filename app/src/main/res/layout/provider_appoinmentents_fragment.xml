@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Fragment.providerservice.providerRecentList.providerRecentList">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="wrap_content">
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:text="Getting Started"
+                  android:textSize="@dimen/_14sdp"
+                  android:layout_margin="@dimen/_10sdp"
+                  android:textColor="@color/black"
+                  android:layout_height="wrap_content"/>
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:text="If you are new to Amindset, this is the right place to get up you and running!"
+                  android:textSize="@dimen/_14sdp"
+                  android:layout_margin="@dimen/_10sdp"
+                  android:layout_height="wrap_content"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/gray"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:visibility="gone"
+                  android:layout_height="wrap_content">
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:text="Starting out with Amindset"
+                  android:textSize="@dimen/_16sdp"
+                  android:layout_margin="@dimen/_10sdp"
+                  android:textColor="@color/colorPrimary"
+                  android:layout_height="wrap_content"/>
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:text="Amindset was created to make your life easier. Clic About Amindsetto learn about what we have to offer."
+                  android:textSize="@dimen/_14sdp"
+                  android:layout_margin="@dimen/_10sdp"
+                  android:layout_height="wrap_content"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/gray"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="wrap_content">
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:id="@+id/click_here"
+                  android:text="Click here to learn more about About Amindset"
+                  android:textSize="@dimen/_14sdp"
+                  android:layout_margin="@dimen/_10sdp"
+                  android:textColor="@color/colorPrimary"
+                  android:layout_height="wrap_content"/>
+
+
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/gray"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="wrap_content">
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:text="Payment made easy"
+                  android:textSize="@dimen/_14sdp"
+                  android:layout_margin="@dimen/_10sdp"
+                  android:textColor="@color/colorPrimary"
+                  android:layout_height="wrap_content"/>
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:text="just enter your payment information in your profile setting and see a provider."
+                  android:textSize="@dimen/_14sdp"
+                  android:layout_margin="@dimen/_10sdp"
+                  android:layout_height="wrap_content"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/gray"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_marginBottom="50dp"
+                  android:layout_height="wrap_content">
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:text="Need more help?"
+                  android:textSize="@dimen/_14sdp"
+                  android:layout_margin="@dimen/_10sdp"
+                  android:textColor="@color/colorPrimary"
+                  android:layout_height="wrap_content"/>
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:id="@+id/faqs"
+                  android:text="Check out our FAQs by click here"
+                  android:textSize="@dimen/_14sdp"
+                  android:layout_margin="@dimen/_10sdp"
+                  android:layout_height="wrap_content"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/gray"/>
+
+        <ImageView android:layout_width="@dimen/_100sdp"
+                   android:background="@drawable/girl"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="@dimen/_10sdp"
+                   android:layout_height="@dimen/_100sdp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
